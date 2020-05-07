@@ -1,15 +1,26 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Andrew Hansbrough",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.0.0",
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hansbrougha/readme-generator.git"
+  },
+  "keywords": [
+    "--save"
+  ],
+  "bugs": {
+    "url": "https://github.com/hansbrougha/readme-generator/issues"
+  },
+  "homepage": "https://github.com/hansbrougha/readme-generator#readme"
 }
