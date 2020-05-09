@@ -9,8 +9,11 @@
   "author": "Andrew Hansbrough",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "dotenv": "^8.0.0",
-    "inquirer": "^6.3.1"
+    "fs": "0.0.1-security",
+    "inquirer": "^6.5.2",
+    "util": "^0.12.3"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,8 @@
+{
+	"name1": "Andrew",
+	"name2": "Hansbrough",
+	"email": "hansbroughku@gmail.com",
+	"title": "README GENERATOR",
+	"description": "A simple readme generator that runs inside of node.",
+	"license": ""
+}
