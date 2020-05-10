@@ -12,12 +12,7 @@ function promptUser() {
     {
       type: "input",
       name: "name1",
-      message: "What is your first name? ",
-    },
-    {
-      type: "input",
-      name: "name2",
-      message: "What is your last name? ",
+      message: "Please Enter Your Name.",
     },
     {
       type: "input",
@@ -26,28 +21,49 @@ function promptUser() {
     },
     {
       type: "input",
-      name: "title",
-      message: "Give your project a title: ",
-    },
-    {
-      type: "input",
-      name: "description",
-      message: "Write a short description of your project: ",
-    },
-    {
-      type: "input",
-      message: "Enter your GitHub username:",
+      message: "Enter your GitHub username.",
       name: "username",
     },
     {
       type: "input",
+      name: "title",
+      message: "Give your project a title.",
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "Write a short description of your project.",
+    },
+    {
+      type: "input",
+      name: "role",
+      message: "What is your role?",
+    },
+    {
+      //this should be a multiple choice
+      type: "input",
+      name: "languages",
+      message: "What languages are you using?",
+    },
+    {
+      type: "input",
       name: "installation",
-      message: "Does your project have installation instructions?",
+      message: "Installation instructions?",
     },
     {
       type: "input",
       name: "license",
       message: "Licensing?",
+    },
+    {
+      type: "input",
+      name: "usage",
+      message: "Usage?",
+    },
+    {
+      type: "input",
+      name: "test",
+      message: "Type in your test command.",
     },
   ]);
 }
