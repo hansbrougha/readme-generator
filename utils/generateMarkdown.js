@@ -1,9 +1,9 @@
 //const userInfo = require("./user.json");
 
-function generateMarkdown(data) {
+function generateMarkdown(responses) {
   return `
-# ${data.title}\n
-${data.description}\n
+# ${responses.title}\n
+${responses.description}\n
 \n
 ## Table of Contents\n
   *
@@ -11,15 +11,14 @@ ${data.description}\n
   * 
   * 
   * 
-## ${data.installation}
-## ${data.usage}
-## ${data.license}
-## ${data.contributing}
-## ${data.tests}
-## ${data.questions}
+## ${responses.installation}
+## ${responses.usage}
+## ${responses.license}
+## ${responses.contributing}
+## ${responses.tests}
+## ${responses.questions}
 
 `;
 }
-console.log(data);
 
 module.exports = generateMarkdown;
