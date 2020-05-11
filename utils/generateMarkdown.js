@@ -3,9 +3,10 @@
 function generateMarkdown(responses) {
   return `
 # ${responses.title}
+Badges:
 * ${responses.description}
 ---
-## Table of Contents\n
+## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -14,39 +15,34 @@ function generateMarkdown(responses) {
 ---
 ## Installation
 \`\`\`
-${responses.installation}
+  ${responses.installation}
+  ${responses.dependencies}
 \`\`\`
 ---
 ## Usage
-* ${responses.usage}
-\`\`\`
+  ${responses.usage}
 ### User Story
-AS A ${responses.role}
+\`\`\`
+  AS a ${responses.role}
 
-I WANT a README generator
+  I WANT a ${responses.title}
 
-SO THAT I can easily put together a good README for a new project
-
-GIVEN the ${responses.role} has a GitHub profile and a repository
-
-WHEN prompted for the ${responses.role}'s GitHub username and repo specific information
-
-THEN a README for the repo is generated.
+  SO THAT I ${responses.usage}
 \`\`\`
 ---
 ## License
-* ${responses.license}
+  [![License: ${responses.license}](https://img.shields.io/badge/License-${responses.license}-blue.svg)](https://opensource.org/licenses/${responses.license})
 ---
 ## Contributors
-* ${responses.name1}
+  ${responses.name1}
 ---
 ## Test
 \`\`\`
-${responses.test}
+  ${responses.test}
 \`\`\`
 ---
 ## Questions
-* Send Questions to ${responses.name1} at ${responses.email}.
+  Send Questions to ${responses.name1} at ${responses.email}.
 ---
 `;
 }
