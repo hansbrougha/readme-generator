@@ -74,14 +74,14 @@ function promptUser() {
 }
 
 promptUser()
-  .then(function (responses) {
+  .then((responses) => {
     const md = generateMarkdown(responses);
-    return writeFileAsync("README.md", md);
+    return writeFileAsync("README2.md", md);
   })
-  .then(function () {
-    console.log("Successfully wrote to README.md.");
+  .then(() => {
+    console.log("Successfully wrote to README.md");
   })
-  .catch(function (err) {
+  .catch((err) => {
     console.log(err);
   });
 
