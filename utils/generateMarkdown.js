@@ -3,46 +3,47 @@
 function generateMarkdown(responses) {
   return `
 # ${responses.title}
-Badges:
 * ${responses.description}
 ---
 ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
   * [Contributors](#contributors)
   * [Questions](#questions)
+  * [License](#license)
 ---
 ## Installation
+* To install necessary dependencies, run the following command:
 \`\`\`
   ${responses.installation}
-  ${responses.dependencies}
 \`\`\`
 ---
 ## Usage
-  ${responses.usage}
-### User Story
+* ${responses.usage}
+  ### User Story
 \`\`\`
   AS a ${responses.role}
 
   I WANT a ${responses.title}
 
-  SO THAT I ${responses.usage}
+  SO THAT I can ${responses.usage}
 \`\`\`
----
-## License
-  [![License: ${responses.license}](https://img.shields.io/badge/License-${responses.license}-blue.svg)](https://opensource.org/licenses/${responses.license})
+![${responses.title} demo](./${responses.demo})
 ---
 ## Contributors
-  ${responses.name1}
+* ${responses.name1}
 ---
 ## Test
+* To run tests, run the following command:
 \`\`\`
   ${responses.test}
 \`\`\`
 ---
 ## Questions
-  Send Questions to ${responses.name1} at ${responses.email}.
+* Send Questions to ${responses.name1} at ${responses.email}.
+---
+## License
+[![License: ${responses.license}](https://img.shields.io/badge/License-${responses.license}-blue.svg)](https://opensource.org/licenses/${responses.license})
 ---
 `;
 }

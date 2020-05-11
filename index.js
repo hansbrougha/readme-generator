@@ -12,7 +12,7 @@ function promptUser() {
     {
       type: "input",
       name: "name1",
-      message: "Please Enter Your Name.",
+      message: "Please Enter Your Name:",
     },
     {
       type: "input",
@@ -21,18 +21,18 @@ function promptUser() {
     },
     {
       type: "input",
-      message: "Enter your GitHub username.",
+      message: "Enter your GitHub username:",
       name: "username",
     },
     {
       type: "input",
       name: "title",
-      message: "Give your project a title.",
+      message: "Give your project a title:",
     },
     {
       type: "input",
       name: "description",
-      message: "Write a short description of your project.",
+      message: "Write a short description of your project:",
     },
     {
       type: "input",
@@ -48,7 +48,7 @@ function promptUser() {
     {
       type: "input",
       name: "installation",
-      message: "Installation instructions?",
+      message: "To install necessary dependencies, run the following command:",
     },
     {
       type: "input",
@@ -58,12 +58,17 @@ function promptUser() {
     {
       type: "input",
       name: "usage",
-      message: "Usage?",
+      message: "What is the purpose of your project?",
+    },
+    {
+      type: "input",
+      name: "demo",
+      message: "Provide a Demo Gif file name:",
     },
     {
       type: "input",
       name: "test",
-      message: "Type in your test command.",
+      message: "To run tests, run the following command:",
     },
   ]);
 }
